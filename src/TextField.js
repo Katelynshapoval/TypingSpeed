@@ -1,9 +1,10 @@
 function TextField() {
   return (
     <div className="text">
-      <div></div>
-      <div></div>
-      <div></div>
+      <div className="inputWrapper"></div>
+      <div className="textTestWrapper">
+        <p></p>
+      </div>
     </div>
   );
 }

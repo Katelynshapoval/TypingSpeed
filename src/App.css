@@ -11,3 +11,21 @@
   -moz-box-shadow: 4px 3px 13px 5px rgba(217, 214, 217, 1);
   box-shadow: 4px 3px 13px 5px rgba(217, 214, 217, 1);
 }
+.inputWrapper {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+.textTestWrapper {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+
+.textTestWrapper p {
+  overflow: hidden;
+  width: 100%;
+  font-size: 35px;
+  margin-top: 25px;
+  white-space: nowrap;
+}
