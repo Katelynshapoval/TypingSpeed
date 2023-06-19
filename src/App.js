@@ -1,8 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
+import TextField from "./TextField";
+import { useState } from "react";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <TextField />
+    </div>
+  );
 }
 
 export default App;
