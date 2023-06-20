@@ -5,27 +5,30 @@
   height: 100vh;
 }
 .text {
+  display: flex;
   width: 90%;
   height: 100px;
   -webkit-box-shadow: 4px 3px 13px 5px rgba(217, 214, 217, 1);
   -moz-box-shadow: 4px 3px 13px 5px rgba(217, 214, 217, 1);
   box-shadow: 4px 3px 13px 5px rgba(217, 214, 217, 1);
 }
-.inputWrapper {
-  display: inline-block;
-  width: 50%;
-  height: 100%;
-}
+.inputWrapper,
 .textTestWrapper {
   display: inline-block;
   width: 50%;
   height: 100%;
 }
-
-.textTestWrapper p {
+.textTest,
+.textUser {
   overflow: hidden;
   width: 100%;
   font-size: 35px;
   margin-top: 25px;
-  white-space: nowrap;
+  white-space: pre;
+}
+.textTest {
+}
+.textUser {
+  display: flex;
+  justify-content: flex-end;
 }

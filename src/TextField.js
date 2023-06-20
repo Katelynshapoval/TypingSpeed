@@ -1,9 +1,14 @@
-function TextField() {
+function TextField({ TestText, userText }) {
+  console.log(`"${userText}"`);
   return (
     <div className="text">
-      <div className="inputWrapper"></div>
+      <div className="inputWrapper">
+        <p style={{ "text-align": "right", color: "red" }} className="textUser">
+          {userText}
+        </p>
+      </div>
       <div className="textTestWrapper">
-        <p></p>
+        <p className="textTest">{TestText}</p>
       </div>
     </div>
   );
