@@ -1,6 +1,14 @@
-function TextField({ TestText, userText }) {
+function TextField({ TestText, userText, finishedText }) {
   return (
     <div className="text">
+      <div className="finishedWrappper">
+        <p
+          style={{ "text-align": "right", color: "blue" }}
+          className="finishedText"
+        >
+          {finishedText}
+        </p>
+      </div>
       <div className="inputWrapper">
         <p style={{ "text-align": "right", color: "red" }} className="textUser">
           {userText}

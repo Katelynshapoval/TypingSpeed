@@ -6,28 +6,36 @@
 }
 .text {
   display: flex;
+  margin: 4%;
   width: 90%;
   height: 100px;
   -webkit-box-shadow: 4px 3px 13px 5px rgba(217, 214, 217, 1);
   -moz-box-shadow: 4px 3px 13px 5px rgba(217, 214, 217, 1);
   box-shadow: 4px 3px 13px 5px rgba(217, 214, 217, 1);
+  justify-content: flex-end;
 }
 .inputWrapper,
-.textTestWrapper {
-  display: inline-block;
-  width: 50%;
+.textTestWrapper,
+.finishedWrappper {
   height: 100%;
 }
-.textTest,
-.textUser {
+.finishedWrappper,
+.textTestWrapper {
   overflow: hidden;
+}
+.finishedText {
+  display: flex;
+  justify-content: flex-end;
+}
+.textTestWrapper {
+  min-width: 50%;
+  max-width: 50%;
+}
+.textTest,
+.textUser,
+.finishedText {
   width: 100%;
   font-size: 35px;
   margin-top: 25px;
   white-space: pre;
-}
-
-.textUser {
-  display: flex;
-  justify-content: flex-end;
 }

@@ -9,13 +9,23 @@ function App() {
   const [TestText, setTestText] = useState(t);
   // Stores the text which user enters
   const [userText, setUserText] = useState("");
+  // Stores text that cannot be edited
+  const [finishedText, setFinishedText] = useState("");
   // If any key is pressed
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === TestText[0]) {
-        let text = userText + TestText[0];
         setTestText(TestText.substring(1));
-        setUserText(text);
+        if (e.key == " ") {
+          setFinishedText(finishedText + userText);
+          setUserText(" ");
+        } else {
+          let text = userText + TestText[0];
+          setUserText(text);
+        }
+      } else if (e.key === "Backspace" && userText !== " ") {
+        setTestText(userText[userText.length - 1] + TestText);
+        setUserText(userText.slice(0, -1));
       }
     };
 
@@ -28,7 +38,11 @@ function App() {
 
   return (
     <div className="App">
-      <TextField userText={userText} TestText={TestText} />
+      <TextField
+        userText={userText}
+        TestText={TestText}
+        finishedText={finishedText}
+      />
     </div>
   );
 }
