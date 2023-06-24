@@ -11,16 +11,21 @@ function App() {
   const [userText, setUserText] = useState("");
   // If any key is pressed
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === TestText[0]) {
+        let text = userText + TestText[0];
+        setTestText(TestText.substring(1));
+        setUserText(text);
+      }
+    };
+
     document.addEventListener("keydown", handleKeyDown);
-  });
-  const handleKeyDown = (e) => {
-    // console.log(e.key);
-    if (e.key == TestText[0]) {
-      let text = userText + TestText[0];
-      setTestText(TestText.slice(1));
-      setUserText(text);
-    }
-  };
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [TestText]);
+
   return (
     <div className="App">
       <TextField userText={userText} TestText={TestText} />

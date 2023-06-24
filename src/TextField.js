@@ -1,5 +1,4 @@
 function TextField({ TestText, userText }) {
-  console.log(`"${userText}"`);
   return (
     <div className="text">
       <div className="inputWrapper">
