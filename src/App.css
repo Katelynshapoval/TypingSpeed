@@ -13,6 +13,7 @@
   -moz-box-shadow: 4px 3px 13px 5px rgba(217, 214, 217, 1);
   box-shadow: 4px 3px 13px 5px rgba(217, 214, 217, 1);
   justify-content: flex-end;
+  overflow: hidden;
 }
 .inputWrapper,
 .textTestWrapper,
@@ -33,9 +34,18 @@
 }
 .textTest,
 .textUser,
-.finishedText {
+.finishedText,
+.crossText {
   width: 100%;
   font-size: 35px;
   margin-top: 25px;
   white-space: pre;
+}
+.crossText {
+  text-decoration: line-through;
+  color: red;
+}
+.textUser {
+  text-align: "right";
+  color: red;
 }

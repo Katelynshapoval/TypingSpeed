@@ -1,4 +1,6 @@
-function TextField({ TestText, userText, finishedText }) {
+function TextField({ TestText, userText, finishedText, incorrectText }) {
+  // If the array of incorrect letters is empty or not
+  let correctWrong = incorrectText.length === 0 ? "textUser" : "crossText";
   return (
     <div className="text">
       <div className="finishedWrappper">
@@ -10,9 +12,7 @@ function TextField({ TestText, userText, finishedText }) {
         </p>
       </div>
       <div className="inputWrapper">
-        <p style={{ "text-align": "right", color: "red" }} className="textUser">
-          {userText}
-        </p>
+        <p className={correctWrong}>{userText}</p>
       </div>
       <div className="textTestWrapper">
         <p className="textTest">{TestText}</p>
