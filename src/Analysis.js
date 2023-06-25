@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 function Analysis({ time, symbols }) {
   return (
     <div className="analysisWrapper">
+      <p className="title">Test your typing skills</p>
       <div className="analysis">
         {time}
         <p>Seconds</p>
