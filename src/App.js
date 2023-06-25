@@ -1,6 +1,6 @@
 import "./App.css";
 import TextField from "./TextField";
-import Timer from "./Timer";
+import Analysis from "./Analysis";
 import { useState, useEffect, useRef } from "react";
 
 function App() {
@@ -103,7 +103,7 @@ function App() {
 
   return (
     <div className="App">
-      <Timer time={time} />
+      <Analysis time={time} symbols={(finishedText + userText).length} />
       <TextField
         userText={userText}
         TestText={TestText}
