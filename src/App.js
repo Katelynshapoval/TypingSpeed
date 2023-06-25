@@ -4,10 +4,10 @@ import Analysis from "./Analysis";
 import { useState, useEffect, useRef } from "react";
 
 function App() {
-  const t =
-    "OK, yes. That is a known issue that we still need to address and is not the correct/desired behavior. We do still want to trim space in general, but we'll take a closer look at improving detection of space on the borders inside and outside of inline elements.";
+  const text =
+    "They always looked back before turning the corner, for their mother was always at the window to nod and smile, and wave her hand to them. Somehow it seemed as if they couldn't have got through the day without that, for whatever their mood might be, the last glimpse of that motherly face was sure to affect them like sunshine. 'If Marmee shook her fist instead of kissing her hand to us, it would serve us right, for more ungrateful wretches than we are were never seen,' cried Jo, taking a remorseful satisfaction in the snowy walk and bitter wind. 'Don't use such dreadful expressions,' replied Meg from the depths of the veil in which she had shrouded herself like a nun sick of the world.";
   // Stores the text which user has to type in
-  const [TestText, setTestText] = useState(t);
+  const [TestText, setTestText] = useState(text);
   // Stores the text which user enters
   const [userText, setUserText] = useState("");
   // Stores text that cannot be edited
