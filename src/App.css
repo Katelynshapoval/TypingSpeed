@@ -4,6 +4,7 @@
   align-items: center;
   height: 100vh;
 }
+/* The main container of the application */
 .text {
   display: flex;
   margin: 4%;
@@ -15,6 +16,7 @@
   justify-content: flex-end;
   overflow: hidden;
 }
+/* The text container within .text*/
 .inputWrapper,
 .textTestWrapper,
 .finishedWrappper {
@@ -41,11 +43,20 @@
   margin-top: 25px;
   white-space: pre;
 }
+/* For incorrect text */
 .crossText {
   text-decoration: line-through;
-  color: red;
 }
 .textUser {
   text-align: "right";
   color: red;
+}
+.finishedWrappper {
+  color: rgb(66, 63, 63);
+  text-align: right;
+}
+
+.timer {
+  position: absolute;
+  top: 20%;
 }
