@@ -1,4 +1,56 @@
-# Getting Started with Create React App
+# Typing Speed Test App using React
+
+This repository contains a Typing Speed Test App built using React. The app allows users to test their typing speed and accuracy by comparing their input to a provided passage of text.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+  - [Real-time Typing Test](#real-time-typing-test)
+  - [Timer](#timer)
+  - [Accuracy Tracking](#accuracy-tracking)
+- [Usage](#usage)
+- [Code Explanation](#code-explanation)
+- [Getting Started with Create React App](#getting-started-with-create-react-app)
+
+## Introduction
+
+The "Typing Speed Test App using React" project demonstrates the creation of a typing speed test application using React. Users can practice their typing skills by entering text as accurately and quickly as possible.
+
+## Features
+
+### Real-time Typing Test
+
+Users are presented with a passage of text that they must type out. The app tracks each key press and displays the remaining portion of the text that needs to be typed.
+
+### Timer
+
+The app includes a timer that counts down from 60 seconds. Users must complete typing the passage before the timer runs out.
+
+### Accuracy Tracking
+
+As users type, the app tracks the accuracy of their input. Incorrectly typed characters are highlighted, helping users identify and correct mistakes.
+
+## Usage
+
+1. Ensure that you have the necessary dependencies installed.
+2. Open the terminal and navigate to the project directory.
+3. Run the application using the command: `npm start`.
+4. The app will be accessible at `http://localhost:3000`.
+
+## Code Explanation
+
+The provided React code demonstrates how to build a Typing Speed Test App. Key features and concepts include:
+
+- Tracking user input and comparing it to the provided passage.
+- Implementing a timer that counts down from 60 seconds.
+- Highlighting incorrectly typed characters for accuracy tracking.
+- Using the `useState`, `useEffect`, and `useRef` hooks for state management and handling key events.
+
+The app is structured with components such as `TextField` for displaying text input fields and `Analysis` for providing feedback on typing speed and accuracy.
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
